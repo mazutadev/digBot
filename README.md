@@ -20,7 +20,7 @@ Where:
 
 The program will utilize the "Turtle" robot to dig the specified area. During the operation, the program will check for specific blocks and sort the inventory.
 
-Alternatively, you can use the command `DigBot/src/main.lua` and then enter the values for length, width, and height one by one.
+Alternatively, you can use the command `DigBot/src/main.lua` and then enter the values for `[length]`, `[width]`, and `[height]` one by one.
 
 ## Configuration
 At the beginning of the program, there are several customizable parameters:
