@@ -51,11 +51,11 @@ for i = 1, height do
         end
         -- END DIG TURTLE LENGTH
 
-        if width_position == width then
+        if width_position == width then -- TODO: Change to current_x logic
             break
         end
         utils.move.set_direction(current_x)
-        current_x = utils.position.record_x(height_position, current_x)
+        current_x = current_x + utils.position.record_x(current_z)
 
     -- END DIG TURTLE WIDTH
     end
