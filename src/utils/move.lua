@@ -28,29 +28,14 @@ local function move_and_turn(direction)
     end
 end
 
-local function set_move_direction(width_position, height_position, input_width)
+local function set_move_direction(current_x)
 
-    if check.even(input_width) then
-        if check.even(height_position) then
-            if check.even(width_position) then
-                move_and_turn("right")
-            else
-                move_and_turn("left")
-            end
-        else
-            if check.even(width_position) then
-                move_and_turn("left")
-            else
-                move_and_turn("right")
-            end
-        end
+    if check.even(current_x) then
+        move_and_turn("left")
     else
-        if check.even(width_position) then
-            move_and_turn("left")
-        else
-            move_and_turn("right")
-        end
+        move_and_turn("right")
     end
+
 end
 
 local function go_start_point(current_y,current_x,current_z)
