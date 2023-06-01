@@ -43,7 +43,6 @@ for i = 1, height do
         -- BEGIN DIG TURTLE LENGTH
 
         for k = 1, length -1 do
-
             utils.dig.forward()
             turtle.forward()
             current_y = utils.position.record_y(width_position, height_position, width, current_y)
@@ -55,9 +54,8 @@ for i = 1, height do
         if width_position == width then
             break
         end
-        utils.move.set_direction(width_position, height_position, width)
+        utils.move.set_direction(current_x)
         current_x = utils.position.record_x(height_position, current_x)
-        width_position = width_position + 1
 
     -- END DIG TURTLE WIDTH
     end

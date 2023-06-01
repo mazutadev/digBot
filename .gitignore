@@ -1,3 +1,5 @@
 .idea
 DigBot.iml
 src/utils/utils.iml
+.DS_Store
+src/.DS_Store
