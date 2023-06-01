@@ -49,16 +49,23 @@ for i = 1, height do
         end
         -- END DIG TURTLE LENGTH
 
-        if width_position == width then -- TODO: Change to current_x stop logic
-            break
+        if check.even(current_z) then
+            if current_x == 1 then
+                break
+            end
+        else
+            if current_x == width then
+                break
+            end
         end
+
         utils.move.set_direction(current_x)
         current_x = current_x + utils.position.record_x(current_z)
 
     -- END DIG TURTLE WIDTH
     end
 
-    if current_z == height then -- TODO: Change to current_y stop logic
+    if current_z == height then
         break
     else
         turtle.digDown()
