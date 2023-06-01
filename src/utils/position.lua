@@ -26,8 +26,8 @@ local function record_position_y(width_position, height_position, input_width, c
     end
 end
 
-local function record_position_x(height_position, current_x)
-    return check.even(height_position) and current_x - 1 or current_x + 1
+local function record_position_x(current_z)
+    return check.even(current_z) and - 1 or 1
 end
 
 local function record_position_z(height_position, input_height)
